@@ -152,7 +152,7 @@ public class PanelClients extends PanelPrincipal implements ActionListener
     public Object[][] obtenirDonnees(String filtre)
     {
         ArrayList<Client> lesClients = Controleur.selectAllClients(filtre);
-        Object[][] matrice = new Object[lesClients.size()][6];
+        Object[][] matrice = new Object[lesClients.size()][5];
 
         int i = 0;
 
@@ -179,7 +179,7 @@ public class PanelClients extends PanelPrincipal implements ActionListener
 			this.txtAdresse.setText("");
             this.btEnregistrer.setText("Enregistrer");
 		} 
-        else if (e.getSource() == this.btEnregistrer && this.btEnregistrer.getText().contentEquals("Enregistrer")) 
+        else if(e.getSource() == this.btEnregistrer && this.btEnregistrer.getText().contentEquals("Enregistrer")) 
         {
 			String nom = this.txtNom.getText();
 			String prenom = this.txtPrenom.getText();

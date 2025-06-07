@@ -6,24 +6,24 @@ public class Intervention
     private String description;
     private float prixInter;
     private String dateInter;
-    private int intproduit, idtechnicien;
+    private int idproduit, idtechnicien;
 
-    public Intervention(int idinter, String description, float prixInter, String dateInter, int intproduit, int idtechnicien) 
+    public Intervention(int idinter, String description, float prixInter, String dateInter, int idproduit, int idtechnicien) 
     {
         this.idinter = idinter;
         this.description = description;
         this.prixInter = prixInter;
         this.dateInter = dateInter;
-        this.intproduit = intproduit;
+        this.idproduit = idproduit;
         this.idtechnicien = idtechnicien;
     }
 
-    public Intervention(String description, float prixInter, String dateInter, int intproduit, int idtechnicien) 
+    public Intervention(String description, float prixInter, String dateInter, int idproduit, int idtechnicien) 
     {
         this.description = description;
         this.prixInter = prixInter;
         this.dateInter = dateInter;
-        this.intproduit = intproduit;
+        this.idproduit = idproduit;
         this.idtechnicien = idtechnicien;
     }
 
@@ -63,13 +63,13 @@ public class Intervention
         this.dateInter = dateInter;
     }
 
-    public int getIntproduit() 
+    public int getIdproduit() 
     {
-        return intproduit;
+        return idproduit;
     }
-    public void setIntproduit(int intproduit) 
+    public void setIdproduit(int idproduit) 
     {
-        this.intproduit = intproduit;
+        this.idproduit = idproduit;
     }
 
     public int getIdtechnicien() 

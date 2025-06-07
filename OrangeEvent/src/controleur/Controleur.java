@@ -37,7 +37,7 @@ public class Controleur
 		Modele.updateClient(unClient);
 	}
 
-	//Gestion Produit
+	////////////////////////Gestion Produit
 	public static void insertProduit(Produit unProduit) 
     {
 		Modele.insertProduit(unProduit);
@@ -47,6 +47,16 @@ public class Controleur
     {
 		return Modele.selectAllProduits();
     }
+
+	public static void updateProduit(Produit unProduit)
+	{
+		Modele.updateProduit(unProduit);
+	}
+
+	public static void deleteProduit(int idproduit)
+	{
+		Modele.deleteProduit(idproduit);
+	}
 
 	//gestion technicien
 	public static void insertTechnicien(Technicien unTechnicien) 
@@ -69,8 +79,25 @@ public class Controleur
 		Modele.deleteTechnicien(idtechnicien);
 	}
 
+
+	/////////////////////////////intervention
 	public static ArrayList<Intervention> selectAllInterventions()
     {
 		return Modele.selectAllInterventions();
     }
+
+	public static void insertInter(Intervention unIntervention)
+	{
+		Modele.insertInter(unIntervention);
+	}
+
+	public static void updateInter(Intervention unIntervention)
+	{
+		Modele.updateInter(unIntervention);
+	}
+
+	public static void deleteInter(int idinter)
+	{
+		Modele.deleteInter(idinter);
+	}
 }

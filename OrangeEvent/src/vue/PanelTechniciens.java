@@ -152,7 +152,7 @@ public class PanelTechniciens extends PanelPrincipal implements ActionListener
     public Object[][] obtenirDonnees(String filtre)
     {
         ArrayList<Technicien> lesTechniciens = Controleur.selectAllTechniciens(filtre);
-        Object[][] matrice = new Object[lesTechniciens.size()][6];
+        Object[][] matrice = new Object[lesTechniciens.size()][5];
 
         int i = 0;
 
